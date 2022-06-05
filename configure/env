@@ -1,0 +1,9 @@
+# Dont use apostrophes " as they dont get evaluated
+
+# How often to update IP in minutes
+FREQUENCY=5m
+
+# What domain to update; without hostname/subdomain
+DOMAIN=
+# Hostname/subdomain to update; use '@' for TLD/TopLevelDomain (without subdomain e.g. stablestud.org)
+HOSTNAME=

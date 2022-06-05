@@ -1,0 +1,13 @@
+version: "3.6"
+services:
+        ddns:
+                build: "."
+                image: ddns:latest
+                restart: always
+                env_file: "./configure/env"
+                init: true
+                secrets:
+                        - secrets
+secrets:
+        secrets:
+                file: "./configure/secrets"
