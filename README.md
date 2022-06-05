@@ -19,5 +19,5 @@ The domains TTL best is set to a low value (like 600 = 10 minutes)
 You need api keys to be able to update the domain.     
 Can be retrieved from here: `https://developer.godaddy.com/`
 
-If running with `docker run` and not via the `docker-compose` comamnd, make sure to add the option `--init`,
-or else container can only be killed and not stopped as `sh` doesnt send the signals further to its children processes.
+If running with `docker run` and not via the `docker-compose` command, make sure to add the option `--init`,
+or else container can only be killed and not stopped as sleep will ignore the interrupts.
